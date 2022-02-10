@@ -1,0 +1,40 @@
+\hypertarget{_entity_8h_source}{}\doxysection{Entity.\+h}
+\label{_entity_8h_source}\index{C:/Users/Tyler/Desktop/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 1/Entity.h@{C:/Users/Tyler/Desktop/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 1/Entity.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}SceneNode.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_entity}{Entity}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_scene_node}{SceneNode}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \textcolor{keywordtype}{void} setVelocity(DirectX::XMFLOAT2 velocity);}
+\DoxyCodeLine{9     \textcolor{keywordtype}{void} setVelocity(\textcolor{keywordtype}{float} vx, \textcolor{keywordtype}{float} vy);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11     DirectX::XMFLOAT2 getVelocity() \textcolor{keyword}{const};}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13     \textcolor{keywordtype}{void} accelerate(DirectX::XMFLOAT2 velocity);}
+\DoxyCodeLine{14     \textcolor{keywordtype}{void} accelerate(\textcolor{keywordtype}{float} vx, \textcolor{keywordtype}{float} vy);}
+\DoxyCodeLine{15     }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     DirectX::XMFLOAT2 mVelocity;}
+\DoxyCodeLine{19     DirectX::XMVECTOR spawnPos = \{5,0,0,0\};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{float} spawnX, spawnY;}
+\DoxyCodeLine{22     UINT objCBIndex;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} updateCurrent(\mbox{\hyperlink{class_game_timer}{GameTimer}} gt);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \textcolor{keyword}{private}:}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \};}
+\DoxyCodeLine{34 }
+
+\end{DoxyCode}

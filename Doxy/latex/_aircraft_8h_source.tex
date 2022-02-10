@@ -1,0 +1,38 @@
+\hypertarget{_aircraft_8h_source}{}\doxysection{Aircraft.\+h}
+\label{_aircraft_8h_source}\index{C:/Users/Tyler/Desktop/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 1/Aircraft.h@{C:/Users/Tyler/Desktop/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 2/101251005\_101248866 -\/ lab assignment 1/Aircraft.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Entity.h"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_aircraft}{Aircraft}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_entity}{Entity}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{public}:}
+\DoxyCodeLine{8     \textcolor{keyword}{enum} Type}
+\DoxyCodeLine{9     \{}
+\DoxyCodeLine{10         Eagle,}
+\DoxyCodeLine{11         Raptor,}
+\DoxyCodeLine{12     \};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \mbox{\hyperlink{class_aircraft}{Aircraft}}(Type type);}
+\DoxyCodeLine{17     \mbox{\hyperlink{struct_render_item}{RenderItem}}* AircraftRI = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} drawCurrent(\mbox{\hyperlink{class_game}{Game}}* gameRef);}
+\DoxyCodeLine{19     }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{private}:}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     Type                mType;}
+\DoxyCodeLine{30     std::string         materialName;}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+
+\end{DoxyCode}

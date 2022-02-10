@@ -1,0 +1,95 @@
+\hypertarget{class_waves}{}\doxysection{Waves Class Reference}
+\label{class_waves}\index{Waves@{Waves}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_waves_af3ea21dbf5d9efdf3a4893a1a53c1b29}\label{class_waves_af3ea21dbf5d9efdf3a4893a1a53c1b29}} 
+{\bfseries Waves} (int m, int n, float dx, float dt, float speed, float damping)
+\item 
+\mbox{\Hypertarget{class_waves_a605fc7d7861dba9848d7370366b694aa}\label{class_waves_a605fc7d7861dba9848d7370366b694aa}} 
+{\bfseries Waves} (const \mbox{\hyperlink{class_waves}{Waves}} \&rhs)=delete
+\item 
+\mbox{\Hypertarget{class_waves_af2e662837a5a8fda069cf66d4a051bf5}\label{class_waves_af2e662837a5a8fda069cf66d4a051bf5}} 
+\mbox{\hyperlink{class_waves}{Waves}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_waves}{Waves}} \&rhs)=delete
+\item 
+\mbox{\Hypertarget{class_waves_a1eaed8603f6b08260a7191706f4b886f}\label{class_waves_a1eaed8603f6b08260a7191706f4b886f}} 
+int {\bfseries Row\+Count} () const
+\item 
+\mbox{\Hypertarget{class_waves_ae76ceb60f9a8a790c88a840febed9a42}\label{class_waves_ae76ceb60f9a8a790c88a840febed9a42}} 
+int {\bfseries Column\+Count} () const
+\item 
+\mbox{\Hypertarget{class_waves_a87d1ac253c4542985cb7bb04bccadd87}\label{class_waves_a87d1ac253c4542985cb7bb04bccadd87}} 
+int {\bfseries Vertex\+Count} () const
+\item 
+\mbox{\Hypertarget{class_waves_ab8a010d118902a124b1fb0b46fa12aa9}\label{class_waves_ab8a010d118902a124b1fb0b46fa12aa9}} 
+int {\bfseries Triangle\+Count} () const
+\item 
+\mbox{\Hypertarget{class_waves_a40f19b6b0c1e2545f2c6be9fda099bd4}\label{class_waves_a40f19b6b0c1e2545f2c6be9fda099bd4}} 
+float {\bfseries Width} () const
+\item 
+\mbox{\Hypertarget{class_waves_af206b1aae5a55d7658f5bd70ea1f07de}\label{class_waves_af206b1aae5a55d7658f5bd70ea1f07de}} 
+float {\bfseries Depth} () const
+\item 
+\mbox{\Hypertarget{class_waves_af79ded15a86530a154bf395af2624ae8}\label{class_waves_af79ded15a86530a154bf395af2624ae8}} 
+const Direct\+X\+::\+XMFLOAT3 \& {\bfseries Position} (int i) const
+\item 
+\mbox{\Hypertarget{class_waves_aff9b4bfb7148cad261f8ebf46020543f}\label{class_waves_aff9b4bfb7148cad261f8ebf46020543f}} 
+const Direct\+X\+::\+XMFLOAT3 \& {\bfseries Normal} (int i) const
+\item 
+\mbox{\Hypertarget{class_waves_a8cbfae656185da94cfe45684206f0008}\label{class_waves_a8cbfae656185da94cfe45684206f0008}} 
+const Direct\+X\+::\+XMFLOAT3 \& {\bfseries TangentX} (int i) const
+\item 
+\mbox{\Hypertarget{class_waves_a716d74e36e832c85f79583b3ec2b1bf0}\label{class_waves_a716d74e36e832c85f79583b3ec2b1bf0}} 
+void {\bfseries Update} (float dt)
+\item 
+\mbox{\Hypertarget{class_waves_a3b0243eb41da0bae72aa1db7e1e365bd}\label{class_waves_a3b0243eb41da0bae72aa1db7e1e365bd}} 
+void {\bfseries Disturb} (int i, int j, float magnitude)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_waves_a7cf77bea4c44873f60cb1e151b8ad08a}\label{class_waves_a7cf77bea4c44873f60cb1e151b8ad08a}} 
+int {\bfseries m\+Num\+Rows} = 0
+\item 
+\mbox{\Hypertarget{class_waves_a522d56b02200a3cc142b1bf2969d7bc5}\label{class_waves_a522d56b02200a3cc142b1bf2969d7bc5}} 
+int {\bfseries m\+Num\+Cols} = 0
+\item 
+\mbox{\Hypertarget{class_waves_abf6b6641219ba9bd06cd0ede552dfc19}\label{class_waves_abf6b6641219ba9bd06cd0ede552dfc19}} 
+int {\bfseries m\+Vertex\+Count} = 0
+\item 
+\mbox{\Hypertarget{class_waves_aec414c881a350e78eb2e7de2bcd8854f}\label{class_waves_aec414c881a350e78eb2e7de2bcd8854f}} 
+int {\bfseries m\+Triangle\+Count} = 0
+\item 
+\mbox{\Hypertarget{class_waves_a23a51819eda7d4e504aee2d242ef45ec}\label{class_waves_a23a51819eda7d4e504aee2d242ef45ec}} 
+float {\bfseries m\+K1} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_waves_adb6810d7189db10ae11a4a7919c494d8}\label{class_waves_adb6810d7189db10ae11a4a7919c494d8}} 
+float {\bfseries m\+K2} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_waves_a1bb7e7d104bede9e8b0dd9fc40418fa5}\label{class_waves_a1bb7e7d104bede9e8b0dd9fc40418fa5}} 
+float {\bfseries m\+K3} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_waves_ac7fd37a783aa9868c8655d5865c09408}\label{class_waves_ac7fd37a783aa9868c8655d5865c09408}} 
+float {\bfseries m\+Time\+Step} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_waves_a5d5c82991fc15e6c17a3865c448622af}\label{class_waves_a5d5c82991fc15e6c17a3865c448622af}} 
+float {\bfseries m\+Spatial\+Step} = 0.\+0f
+\item 
+\mbox{\Hypertarget{class_waves_ae16401f49ce09ab89f729160133df45a}\label{class_waves_ae16401f49ce09ab89f729160133df45a}} 
+std\+::vector$<$ Direct\+X\+::\+XMFLOAT3 $>$ {\bfseries m\+Prev\+Solution}
+\item 
+\mbox{\Hypertarget{class_waves_afc38997ccf4bcc7cea7e60715f631aba}\label{class_waves_afc38997ccf4bcc7cea7e60715f631aba}} 
+std\+::vector$<$ Direct\+X\+::\+XMFLOAT3 $>$ {\bfseries m\+Curr\+Solution}
+\item 
+\mbox{\Hypertarget{class_waves_a9c669721232e729439afb008454fa1b2}\label{class_waves_a9c669721232e729439afb008454fa1b2}} 
+std\+::vector$<$ Direct\+X\+::\+XMFLOAT3 $>$ {\bfseries m\+Normals}
+\item 
+\mbox{\Hypertarget{class_waves_ae95fad56e88d88d81a272f405ca8d5a7}\label{class_waves_ae95fad56e88d88d81a272f405ca8d5a7}} 
+std\+::vector$<$ Direct\+X\+::\+XMFLOAT3 $>$ {\bfseries m\+TangentX}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Tyler/\+Desktop/101251005\+\_\+101248866 -\/ lab assignment 2/101251005\+\_\+101248866 -\/ lab assignment 2/101251005\+\_\+101248866 -\/ lab assignment 1/Waves.\+h\item 
+C\+:/\+Users/\+Tyler/\+Desktop/101251005\+\_\+101248866 -\/ lab assignment 2/101251005\+\_\+101248866 -\/ lab assignment 2/101251005\+\_\+101248866 -\/ lab assignment 1/Waves.\+cpp\end{DoxyCompactItemize}
